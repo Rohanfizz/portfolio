@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ const PageComponent = () => {
         }}
       />
       <ReactMarkdown children={content} />
+      <Analytics />
     </div>
   );
 };
