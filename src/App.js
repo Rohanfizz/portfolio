@@ -43,8 +43,8 @@ const PageComponent = () => {
         style={{
           width: isSmallViewport ? "90%" : "200px", // Adjust width
           height: "auto", // Maintain aspect ratio
-          border: "1px solid black", // Black border
           borderRadius: "10px", // Rounded corners
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
           position: isSmallViewport ? "relative" : "absolute", // Adjust positioning
           margin: isSmallViewport ? "5px" : "10px", // Center for small viewports
           top: isSmallViewport ? "auto" : "3px", // Remove top positioning for small viewports
